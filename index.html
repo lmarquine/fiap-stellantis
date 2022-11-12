@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <title>ALL GO - Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous">
+    </script>
+    <script src="assets/location.js" defer></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ALL GO</a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#be-driver">Seja um motorista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured-3">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container caroussel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/images/driver.jpg" class="d-block w-100" alt="Motorista do ALL GO">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/disabled-passenger.jpg" class="d-block w-100" alt="Passageiro Cadeirante">
+            </div>
+        </div>
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+</div>
+
+<main class="main-content">
+    <div class="container">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold">ALL GO</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                    Um novo jeito de se deslocar.
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Quero Trabalhar</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Quero Usar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5" id="be-driver">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h2 class="display-4 fw-bold lh-1 mb-3">Cadastre-se como motorista</h2>
+                    <p class="col-lg-10 fs-4">
+                        Nascemos para trazer oportunidades e conforto para grande parte da população PCD do Brasil.</p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-light">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="nome@email.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                            <label for="floatingPassword">Senha</label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Lembrar de mim
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Cadastrar</button>
+                        <hr class="my-4">
+                        <small class="text-muted">Ao clicar em cadastrar, você aceita os nossos termos de uso.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom">Vantagens</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <i class="bi bi-shield-shaded"></i>
+                    </div>
+                    <h3 class="fs-2">Seguro</h3>
+                    <p>Todos os motoristas e usuários tem sua identidade checada antes de poder usar o app.</p>
+                </div>
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <i class="bi bi-chat-square-heart-fill"></i>
+                    </div>
+                    <h3 class="fs-2">Prático</h3>
+                    <p>Apenas informando sua origem e destino você tem diversas informações e opções para o seu trajeto.</p>
+                </div>
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <i class="bi bi-cash-coin"></i>
+                    </div>
+                    <h3 class="fs-2">Preço acessivel</h3>
+                    <p>Não é porque é bom que precisa ser caro, fatores como chuva não alteram nossos preços.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="px-4 pt-5 my-5 text-center border-bottom">
+                <h2 class="display-4 fw-bold">MENOR PREÇO DO MERCADO</h2>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">
+                        Um novo jeito de se deslocar.
+                    </p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <div class="row">
+                            <h2>R$2,50/km</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <div class="row">
+                    <h2>Sobre nós</h2>
+                    <p>
+                        Nascemos da ideia de um mundo mais justo, mais móvel, um mundo em movimento, levando pessoas com segurança de um ponto a outro conectando famílias, amigos, conectando pessoas. <strong>Conectando empregos e qualidade de vida<strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="container">
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Oportunidade</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#be-driver" class="nav-link p-0 text-muted">Seja um motorista</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Sobre nós</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#featured-3" class="nav-link p-0 text-muted">Sobre nós</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Cadastre-se em nossa newsletter</h5>
+                    <p>Fique ligado em todas as nossas novidades.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email">
+                        <button class="btn btn-primary" type="button">Inscrever</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2022 ALL GO. Todos os direitos reservados.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
